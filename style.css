@@ -1,0 +1,56 @@
+/*{
+    border: solid 3px red;
+}
+*/
+
+body{
+    background-color: rgb(211, 209, 209);
+}
+
+.container{
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1{
+    text-align: center;
+    font-size: 60px;
+    margin-top: 100px;
+    margin-left: 225px;
+}
+
+.main{
+    display: flex;
+    height: 800px;
+    justify-content: center;
+}
+
+.controls{
+    width: 250px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.board{
+    width: 800px;
+    height: 800px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, .5) 0px 6px 12px;
+}
+
+button{
+    margin: 10px;
+    height: 50px;
+    width: 200px;
+    border-radius: 20px;
+    font-size: 25px;
+    line-height: 50%;
+
+}
+
+#gridSizeLabel{
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
