@@ -32,11 +32,13 @@ h1{
     justify-content: center;
     align-items: center;
 }
-.board{
+#grid{
     width: 800px;
     height: 800px;
     background-color: white;
     box-shadow: rgba(0, 0, 0, .5) 0px 6px 12px;
+    display: grid;
+    
 }
 
 button{
@@ -53,4 +55,16 @@ button{
     font-size: 30px;
     margin-top: 40px;
     margin-bottom: 10px;
+}
+
+#colorPicker{
+    margin: 10px;
+    height: 50px;
+    width: 200px;
+    border-radius: 20px;
+    padding: 10px 80px;
+}
+
+.square{
+    border: green solid 2px
 }

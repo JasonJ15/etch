@@ -12,18 +12,19 @@
         <h1>Etch-A-Sketch</h1>
         <div class = 'main'>
             <div class = 'controls'>
-                <button>Color picker</button>
+                <span>Color Picker</span>
+                <input type='color' id ='colorPicker' name='Choose Color' value='#209D88'>
                 <button>Random color</button>
-                <button>Erase</button>
-                <button>Reset</button>
+                <button id = 'eraser'>Eraser</button>
+                <button id = reset>Reset</button>
                 <label for="gridSize" id = 'gridSizeLabel'>Grid Size</label>
                 <div>
                     <input type="range" id="gridSize" name="gridSize" 
-                           min="12" max="64" value="13">
+                           min="4" max="64" value="12">
                 </div>
 
             </div>
-            <div class = 'board'></div>
+            <div id ='grid'></div>
         </div>
     </div>
     <script src="script.js"></script>
