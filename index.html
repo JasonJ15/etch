@@ -12,19 +12,27 @@
         <h1>Etch-A-Sketch</h1>
         <div class = 'main'>
             <div class = 'controls'>
-                <span>Color Picker</span>
-                <input type='color' id ='colorPicker' name='Choose Color' value='#209D88'>
-                <button>Random color</button>
+                <div id = 'colorContainer'>
+                    <input type='color' id ='colorPicker' name='colorPicker' value='#4A0D67'>
+                    <p>Color Picker</p>
+                </div>
+                <button id = 'random'>Random colors</button>
                 <button id = 'eraser'>Eraser</button>
-                <button id = reset>Reset</button>
+                <button id = 'reset'>Reset</button>
+                <button id = 'hide'>Hide Grid</button>
+                <button id = 'show'>Show Grid</button>
                 <label for="gridSize" id = 'gridSizeLabel'>Grid Size</label>
                 <div>
                     <input type="range" id="gridSize" name="gridSize" 
-                           min="4" max="64" value="12">
+                           min="4" max="100" value="12">
                 </div>
 
             </div>
             <div id ='grid'></div>
+        </div>
+        <div id ='currentColorContainer'>
+            <p>Your current color is:</p>
+            <div id = 'currentColor'></div>
         </div>
     </div>
     <script src="script.js"></script>
